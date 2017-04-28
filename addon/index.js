@@ -1,4 +1,9 @@
+import Ember from 'ember';
 export default class {
+  constructor() {
+    Ember.meta(this); 
+  }
+    
   static create(attrs) {
     return new this(attrs);
   } 
@@ -8,6 +13,10 @@ export default class {
   }
 
   get(key) {
-    return this[key];
+    return Ember.get(this, key);
+  }
+
+  set(key) {
+    return Ember.set(this, key);
   }
 }
