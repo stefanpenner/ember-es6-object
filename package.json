@@ -11,7 +11,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/stefanpenner/ember-es6-object",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
