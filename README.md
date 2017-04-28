@@ -1,8 +1,26 @@
 # ember-es6-object
 
-This README outlines the details of collaborating on this Ember addon.
+WIP: Object baseclass that can be used as a replacment for many ember objects. Larger goal is for ember to be clearer about its interfaces, so we can easily through around different objects, as long as they duck-type to what they need to.
 
-## Installation
+## Usage
+
+```sh
+ember install ember-es6-object
+```
+
+```js
+// app/adapters/application.js
+import Parent from 'ember-es6-object';
+
+export default class ApplicationAdapter extends Parent {
+  findQuery() {
+    return fetch(url).then(resp => resp.json());
+  }
+}
+```
+
+
+## Development
 
 * `git clone <repository-url>` this repository
 * `cd ember-es6-object`
