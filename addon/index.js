@@ -1,10 +1,4 @@
-import Ember from 'ember';
-
 export default class {
-  constructor() {
-    Ember.meta(this); 
-  }
-    
   static create(attrs) {
     return new this(attrs);
   } 
