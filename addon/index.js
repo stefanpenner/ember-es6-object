@@ -1,4 +1,3 @@
-import Ember from 'ember';
 export default class {
   static create(attrs) {
     return new this(attrs);
